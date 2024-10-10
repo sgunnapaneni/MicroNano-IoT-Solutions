@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservice & Nanoservice Solutions for IoT, Edge, and Cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Microservice & Nanoservice Solutions</h1>
+        <h2>IoT, Edge, and Cloud Computing</h2>
+        <nav>
+            <a href="#" id="home">Home</a>
+            <a href="#" id="about">About</a>
+            <a href="#" id="services">Services</a>
+            <a href="#" id="contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="content">
+        <!-- Content will change dynamically -->
+        <section id="home-content" class="page">
+            <h3>Welcome to Our Solutions</h3>
+            <p>Explore our cutting-edge microservice and nanoservice architectures for IoT, Edge, and Cloud systems.</p>
+        </section>
+
+        <section id="about-content" class="page hidden">
+            <h3>About Us</h3>
+            <p>We specialize in creating scalable and flexible service-based architectures, optimized for IoT and cloud environments.</p>
+        </section>
+
+        <section id="services-content" class="page hidden">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Microservice Solutions for IoT Devices</li>
+                <li>Nanoservice Architecture for Edge Computing</li>
+                <li>Cloud-Based System Integration</li>
+            </ul>
+        </section>
+
+        <section id="contact-content" class="page hidden">
+            <h3>Contact Us</h3>
+            <p>Get in touch to learn more about how we can optimize your IoT, Edge, and Cloud systems!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Microservice & Nanoservice Solutions | All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.querySelectorAll('.page').forEach(page => {
+                    page.classList.add('hidden');
+                });
+                const sectionId = this.id + '-content';
+                document.getElementById(sectionId).classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
