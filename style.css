@@ -5,6 +5,53 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+/* Table styling */
+table {
+    width: 80%; /* Increased width for larger screens */
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #f9f9f9; /* Light background for the table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Light border */
+    padding: 15px; /* Increased padding for better readability */
+    text-align: center;
+    font-size: 1.1em; /* Slightly larger font size */
+}
+
+th {
+    background-color: #007acc; /* Darker header background to match page style */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for header text */
+}
+
+td {
+    background-color: #fff; /* Default background color for table cells */
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Alternate row coloring for better distinction */
+}
+
+/* Hover effect for table rows */
+tr:hover td {
+    background-color: #fffbcc; /* Light yellow background on hover */
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 600px) {
+    table {
+        width: 100%; /* Full width on small screens */
+        font-size: 0.9em; /* Reduce font size for smaller devices */
+    }
+
+    th, td {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+}
 
 body {
     display: flex;
