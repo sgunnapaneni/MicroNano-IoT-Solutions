@@ -5,6 +5,65 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+/* Content Section */
+#content-content {
+    text-align: left;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the section with margin */
+    padding: 20px; /* Inner padding for spacing */
+    background-color: #fff; /* White background for the content */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading Styles */
+#content-content h3 {
+    font-size: 1.8em; /* Smaller font size for headings */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #007acc; /* Heading color matching theme */
+    border-bottom: 2px solid #007acc; /* Underline effect for emphasis */
+    padding-bottom: 10px; /* Padding below heading */
+}
+
+/* List Styles */
+#content-content ol {
+    padding-left: 20px; /* Padding for list items */
+    margin-bottom: 20px; /* Space below the list */
+}
+
+#content-content li {
+    font-size: 0.9em; /* Smaller font size for list items */
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.4; /* Increased line height for readability */
+}
+
+/* Links within the content */
+#content-content a {
+    color: #007acc; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for links */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+#content-content a:hover {
+    color: #ffcc00; /* Change color on hover for emphasis */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #content-content {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    #content-content h3 {
+        font-size: 1.5em; /* Smaller heading size for small screens */
+    }
+
+    #content-content li {
+        font-size: 0.85em; /* Adjust list item size */
+    }
+}
+
 /* Table styling */
 table {
     width: 80%; /* Increased width for larger screens */
@@ -17,7 +76,7 @@ table {
 th, td {
     border: 1px solid #ddd; /* Light border */
     padding: 15px; /* Increased padding for better readability */
-    text-align: center;
+    text-align: left; /* Change text alignment to left */
     font-size: 1.1em; /* Slightly larger font size */
 }
 
@@ -115,7 +174,7 @@ main h3 {
 
 /* Individual team member box */
 .team-member {
-    text-align: center;
+    text-align: left; /* Change alignment to left */
     width: 200px; /* Fixed width for all team member boxes */
     padding: 15px;
     border: 1px solid #ddd;
@@ -202,16 +261,20 @@ footer {
         height: 80px;
     }
 }
+
+/* Table specific styling */
 table {
     width: 50%;
     border-collapse: collapse;
     margin: 20px auto;
 }
+
 th, td {
     border: 1px solid #000;
     padding: 10px;
-    text-align: center;
+    text-align: left; /* Changed alignment to left */
 }
+
 th {
     background-color: #3f8cc0;
 }
