@@ -64,6 +64,7 @@
     }
 }
 
+/* Table styling */
 table {
     width: 80%; /* Increased width for larger screens */
     border-collapse: collapse;
@@ -104,7 +105,7 @@ tr:nth-child(odd) td {
 
 /* Hover effect for table rows */
 tr:hover td {
-    background-color: #e1f5fe; /* Light blue background on hover */
+    background-color: #f6f1a3; /* Light blue background on hover */
 }
 
 /* Responsive table for smaller screens */
@@ -119,6 +120,7 @@ tr:hover td {
     }
 }
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -128,7 +130,7 @@ body {
 }
 
 header {
-    background-color: #007acc;
+    background-color: #4b28e3;
     color: white;
     padding: 20px;
     text-align: center;
