@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import './Style.css';
+import './style.css';
+import './navigation.css';
 const Navigation = ({ setActivePage }) => {
   return (
     <nav>

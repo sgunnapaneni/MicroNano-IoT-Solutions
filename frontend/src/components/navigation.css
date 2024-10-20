@@ -1,0 +1,43 @@
+/* Navigation Styles */
+nav {
+  background-color: #ffffff; /* White background for clarity */
+  padding: 10px 20px; /* Padding for spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-start; /* Align links to the left */
+  align-items: center; /* Center items vertically */
+}
+
+/* Style for navigation links */
+nav a {
+  color: #007bff; /* Primary blue color for links */
+  text-decoration: none; /* Remove underline */
+  font-size: 1em; /* Default font size */
+  margin: 0 15px; /* Spacing between links */
+  padding: 8px 0; /* Vertical padding for click area */
+  transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth color and weight transition on hover */
+}
+
+/* Hover effect for links */
+nav a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  font-weight: bold; /* Bold text on hover */
+}
+
+/* Active link style */
+nav a.active {
+  font-weight: bold; /* Bold text for the active link */
+  border-bottom: 2px solid #007bff; /* Blue underline for active link */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav {
+      padding: 8px 15px; /* Smaller padding for mobile */
+  }
+
+  nav a {
+      font-size: 0.9em; /* Smaller font size for mobile */
+      margin: 0 10px; /* Reduced spacing between links */
+  }
+}

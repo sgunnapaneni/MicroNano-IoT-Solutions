@@ -1,6 +1,7 @@
 import React from "react";
-import Navigation from "./Navigation";
-import './Style.css';
+import Navigation from "./navigation";
+import './style.css';
+import './header.css';
 const Header = ({ setActivePage }) => {
   return (
     <header>

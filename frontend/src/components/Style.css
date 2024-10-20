@@ -1,257 +1,137 @@
-
-
-/* Body styling */
+/* Global Body Styling */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Default text color */
+    text-align: center; /* Center-align all text in the body */
 }
 
-/* Content Section */
-#content-content {
-    text-align: left;
-    max-width: 800px; /* Limit width for better readability */
-    margin: 40px auto; /* Center the section with margin */
-    padding: 20px; /* Inner padding for spacing */
-    background-color: #fff; /* White background for the content */
-    border-radius: 8px; /* Rounded corners for a softer look */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+/* Header Styling */
+header {
+    background-color: #4b28e3; /* Header background color */
+    color: white; /* Header text color */
+    padding: 20px; /* Padding around header content */
+    text-align: center; /* Center-align header text */
 }
 
-/* Heading Styles */
-#content-content h3 {
-    font-size: 1.8em; /* Smaller font size for headings */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #007acc; /* Heading color matching theme */
-    border-bottom: 2px solid #007acc; /* Underline effect for emphasis */
-    padding-bottom: 10px; /* Padding below heading */
+header h1 {
+    font-size: 2.5em; /* Main heading size */
 }
 
-/* List Styles */
-#content-content ol {
-    padding-left: 20px; /* Padding for list items */
-    margin-bottom: 20px; /* Space below the list */
+header h2 {
+    font-size: 1.2em; /* Subtitle size */
+    margin-top: 10px; /* Margin above subtitle */
 }
 
-#content-content li {
-    font-size: 0.9em; /* Smaller font size for list items */
-    margin-bottom: 10px; /* Space between list items */
-    line-height: 1.4; /* Increased line height for readability */
+/* Navigation Styles */
+nav {
+    background-color: #ffffff; /* White background for clarity */
+    padding: 10px 20px; /* Padding for spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the navigation links */
+    align-items: center; /* Center items vertically */
 }
 
-/* Links within the content */
-#content-content a {
-    color: #007acc; /* Link color */
+nav a {
+    color: white; /* Link color */
     text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Bold text for links */
-    transition: color 0.3s; /* Smooth transition for hover */
+    font-size: 1em; /* Default font size */
+    margin: 0 15px; /* Spacing between links */
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
-#content-content a:hover {
-    color: #ffcc00; /* Change color on hover for emphasis */
+nav a:hover {
+    color: #ffcc00; /* Change link color on hover */
 }
 
-/* Responsive Styles */
-@media (max-width: 600px) {
-    #content-content {
-        padding: 15px; /* Adjust padding for smaller screens */
-    }
-
-    #content-content h3 {
-        font-size: 1.5em; /* Smaller heading size for small screens */
-    }
-
-    #content-content li {
-        font-size: 0.85em; /* Adjust list item size */
-    }
+/* Main Content Section */
+main {
+    flex: 1; /* Allow main to take available space */
+    padding: 40px; /* Padding around main content */
 }
 
-/* Table styling */
+/* Footer Styling */
+footer {
+    color: white; /* Footer text color */
+    background-color: #007acc; /* Footer background color */
+    text-align: center; /* Center-align footer text */
+    padding: 10px; /* Padding around footer content */
+}
+
+/* Team Member Container */
+.team-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center-align team members */
+    flex-wrap: wrap; /* Allow items to wrap to a new line */
+    gap: 20px; /* Space between team members */
+    margin-top: 20px; /* Margin above team container */
+}
+
+/* Individual Team Member Box */
+.team-member {
+    text-align: left; /* Change alignment to left for team member details */
+    width: 200px; /* Fixed width for team member boxes */
+    padding: 15px; /* Padding inside team member boxes */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background for team member boxes */
+}
+
+/* Team Member Image */
+.team-photo {
+    width: 100px; /* Width of the team member image */
+    height: 100px; /* Height of the team member image */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Cover the image */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Table Specific Styling */
 table {
-    width: 80%; /* Increased width for larger screens */
-    border-collapse: collapse;
-    margin: 20px auto;
+    width: 80%; /* Width of the table */
+    border-collapse: collapse; /* Collapse borders */
+    margin: 20px auto; /* Center the table */
     background-color: #f9f9f9; /* Light background for the table */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Rounded corners for a softer look */
-    overflow: hidden; /* Ensures rounded corners are visible */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are visible */
 }
 
 th, td {
-    border: 1px solid #ddd; /* Light border */
-    padding: 15px; /* Increased padding for better readability */
-    text-align: left; /* Change text alignment to left */
-    font-size: 1.1em; /* Slightly larger font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effects */
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 15px; /* Padding for cells */
+    text-align: left; /* Left align text in cells */
 }
 
 th {
     background-color: #007acc; /* Darker header background to match page style */
-    color: white;
-    font-weight: bold;
+    color: white; /* Header text color */
+    font-weight: bold; /* Bold header text */
     text-transform: uppercase; /* Uppercase for header text */
-    letter-spacing: 1px; /* Space between letters for header text */
 }
 
-td {
-    background-color: #fff; /* Default background color for table cells */
-}
-
-tr:nth-child(even) td {
-    background-color: #f2f2f2; /* Alternate row coloring for better distinction */
-}
-
-tr:nth-child(odd) td {
-    background-color: #ffffff; /* Ensure odd rows remain white */
-}
-
-/* Hover effect for table rows */
-tr:hover td {
-    background-color: #f6f1a3; /* Light blue background on hover */
-}
-
-/* Responsive table for smaller screens */
-@media (max-width: 600px) {
-    table {
-        width: 100%; /* Full width on small screens */
-        font-size: 0.9em; /* Reduce font size for smaller devices */
-    }
-
-    th, td {
-        padding: 10px; /* Adjust padding for small screens */
-    }
-}
-
-header {
-    background-color: #4b28e3;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-header h2 {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
-nav {
-    margin-top: 20px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffcc00;
-}
-
-main {
-    flex: 1; /* Allow main to take available space */
-    padding: 40px;
-    text-align: center;
-}
-
-main h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
-/* Container for team members */
-.team-container {
-    display: flex;
-    justify-content: space-around; /* Ensure even spacing */
-    flex-wrap: wrap; /* Allow the items to wrap to a new line */
-    gap: 20px; /* Space between team members */
-    margin-top: 20px;
-}
-
-/* Individual team member box */
-.team-member {
-    text-align: left; /* Change alignment to left */
-    width: 200px; /* Fixed width for all team member boxes */
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-}
-
-/* Team member image */
-.team-photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-/* Team member name */
-.team-member h4 {
-    margin: 10px 0 5px 0;
-    font-size: 1.2em;
-}
-
-/* Bio information */
-.team-member p {
-    margin: 5px 0;
-    font-size: 0.9em;
-    color: #555;
-}
-
-main p, main ul {
-    font-size: 1.1em;
-}
-
-footer {
-    color: white;
-    background-color: #007acc;
-    text-align: center;
-    padding: 10px;
-}
-#footer {
-    color: white;
-}
-
-/* Hides all sections by default */
-.page {
-    display: none;
-}
-
-/* Show the default (Home) section */
-.page:not(.hidden) {
-    display: block;
-}
-
-/* Responsiveness */
+/* Responsive Styles */
 @media (max-width: 600px) {
     header h1 {
-        font-size: 1.8em;
+        font-size: 1.8em; /* Smaller heading size */
     }
 
     header h2 {
-        font-size: 1em;
+        font-size: 1em; /* Smaller subtitle size */
     }
 
     nav a {
-        font-size: 0.9em;
+        font-size: 0.9em; /* Smaller font size for links */
     }
 
     main {
-        padding: 20px;
+        padding: 20px; /* Smaller padding for main */
     }
 
     footer {
-        padding: 15px;
+        padding: 15px; /* Smaller padding for footer */
     }
 
     .team-container {
@@ -260,28 +140,30 @@ footer {
 
     .team-member {
         width: 100%; /* Take full width for small screens */
-        max-width: 300px;
+        max-width: 300px; /* Maximum width for team members */
     }
 
     .team-photo {
-        width: 80px;
-        height: 80px;
+        width: 80px; /* Smaller team member photo */
+        height: 80px; /* Smaller team member photo */
+    }
+
+    table {
+        width: 100%; /* Full width on small screens */
+        font-size: 0.9em; /* Reduce font size for smaller devices */
+    }
+
+    th, td {
+        padding: 10px; /* Smaller padding for small screens */
     }
 }
 
-/* Table specific styling */
-table {
-    width: 50%;
-    border-collapse: collapse;
-    margin: 20px auto;
+/* Hides all sections by default */
+.page {
+    display: none; /* Hide all sections */
 }
 
-th, td {
-    border: 1px solid #000;
-    padding: 10px;
-    text-align: left; /* Changed alignment to left */
-}
-
-th {
-    background-color: #3f8cc0;
+/* Show the default (Home) section */
+.page:not(.hidden) {
+    display: block; /* Show the active section */
 }

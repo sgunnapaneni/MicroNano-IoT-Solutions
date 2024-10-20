@@ -1,59 +1,73 @@
-/* Content.css */
-
+/* General styles for the content */
 section {
-    margin: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  h3 {
-    font-size: 24px;
-    color: #333;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  
-  ol {
-    list-style-type: decimal;
-    margin-left: 20px;
-  }
-  
-  li {
-    margin-bottom: 20px;
-  }
-  
-  strong {
-    color: #007BFF;
-  }
-  
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 600px) {
-    section {
-      margin: 10px;
-      padding: 10px;
-    }
-  
-    h3 {
-      font-size: 20px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-  }
-  
+  font-family: 'Georgia', serif; /* Classic and professional serif font */
+  color: #333; /* Dark gray for text */
+  line-height: 1.6; /* Comfortable line spacing for readability */
+  max-width: 16000px; /* Increased width for more content per line */
+  margin: 0 auto; /* Center the content on the page */
+  padding: 15px; /* Add breathing room around the content */
+  background-color: #f9f9f9; /* Light gray background for a soft contrast */
+  border-radius: 8px; /* Slightly rounded corners for a modern touch */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+}
+
+/* Styling the headings */
+h3 {
+  font-size: 24px; /* Larger font size for the main heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222; /* Slightly darker for the title */
+  text-align: left; /* Align the title to the left for a more classic look */
+}
+
+/* Ordered list styles */
+ol {
+  counter-reset: item;
+  padding-left: 20px; /* Align list inside the section padding */
+  margin-bottom: 30px;
+}
+
+/* List item styles */
+ol > li {
+  font-size: 18px; /* Slightly larger text for main list */
+  margin-bottom: 20px;
+  counter-increment: item;
+  position: relative;
+}
+
+ol > li:before {
+  content: counter(item) ". "; /* Custom counter for classic numbering */
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: -30px; /* Align the number outside the list item */
+  color: #444; /* Subtle dark color for numbers */
+}
+
+/* Inner list styling */
+ul {
+  padding-left: 40px; /* Indentation for sublist */
+  list-style-type: disc; /* Classic bullet point style */
+  margin-top: 10px;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 8px; /* Add spacing between sub-items */
+  color: #555; /* Slightly lighter color for sub-items */
+}
+
+/* Paragraph styling */
+p {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left; /* Left-align the paragraphs for better flow */
+  color: #444;
+}
+
+/* Strong tag (bold) styling */
+strong {
+  font-weight: bold;
+  color: #000; /* Stronger contrast for bold text */
+}
