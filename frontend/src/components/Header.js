@@ -1,13 +1,21 @@
 import React from "react";
-import Navigation from "./Navigation";
-import './Style.css';
-const Header = ({ setActivePage }) => {
+import '../App.css';
+
+const Header = ({ activePage, setActivePage }) => {
+  const menuItems = ["home", "content", "taxonomy", "teampage", "references"];
+  
   return (
-    <header>
-      <h1>Microservice & Nanoservice Solutions</h1>
-      <h2>IoT Edge and Cloud Computing</h2>
-      <Navigation setActivePage={setActivePage} />
-    </header>
+    <nav>
+      {menuItems.map((item) => (
+        <button
+          key={item}
+          onClick={() => setActivePage(item)}
+          className={`nav-link ${activePage === item ? "active" : ""}`}
+        >
+          {item.charAt(0).toUpperCase() + item.slice(1)}
+        </button>
+      ))}
+    </nav>
   );
 };
 

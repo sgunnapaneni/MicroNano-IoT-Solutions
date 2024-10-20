@@ -29,12 +29,14 @@ function App() {
   };
 
   return (
-    <><div>
-      <Header setActivePage={setActivePage} />
+    <div className="app-container">
+      {/* Pass activePage and setActivePage to Header */}
+      <Header activePage={activePage} setActivePage={setActivePage} />
       <main>{renderPage()}</main>
-    </div><div>
-        <footer>&copy; 2024 Microservice & Nanoservice Solutions | All rights reserved</footer>
-      </div></>
+      <footer>
+        &copy; 2024 Microservice & Nanoservice Solutions | All rights reserved
+      </footer>
+    </div>
   );
 }
 
