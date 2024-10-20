@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './teampage.css'; 
-import './style.css'; // Ensure this is the correct path to your CSS file
+import './Style.css'; // Ensure this is the correct path to your CSS file
 import venkatImage from './images/venkat.jpeg'; // Adjust the path as necessary
 import alexImage from './images/Alex.png'; // Adjust the path as necessary
 import rakeshImage from './images/rakesh.jpg'; // Adjust the path as necessary

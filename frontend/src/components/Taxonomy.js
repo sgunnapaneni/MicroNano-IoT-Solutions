@@ -1,6 +1,6 @@
 import React from 'react';
 import './taxonomy.css';
-import './style.css';
+import './Style.css';
 function Taxonomy() {
   return (
     <section>

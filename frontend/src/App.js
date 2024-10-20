@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Home from "./components/home";
-import Header from "./components/header";
-import Content from "./components/content";
-import TeamPage from "./components/teampage";
-import Taxonomy from "./components/taxonomy";
-import References from "./components/references";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import TeamPage from "./components/TeamPage";
+import Taxonomy from "./components/Taxonomy";
+import References from "./components/References";
 
 import "./App.css";
 

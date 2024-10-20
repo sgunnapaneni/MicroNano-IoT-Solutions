@@ -1,6 +1,6 @@
 import React from 'react';
 import './references.css';
-import './style.css';
+import './Style.css';
 function References() {
   return (
     <section>
