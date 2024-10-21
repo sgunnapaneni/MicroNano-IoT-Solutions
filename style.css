@@ -54,7 +54,7 @@
     font-size: 1.8em; /* Smaller font size for headings */
     margin-bottom: 20px; /* Space below the heading */
     color: #de6706; /* Heading color matching theme */
-    border-bottom: 2px solid #08ce33; /* Underline effect for emphasis */
+    border-bottom: 2px solid #cc6c06; /* Underline effect for emphasis */
     padding-bottom: 10px; /* Padding below heading */
 }
 
@@ -139,6 +139,37 @@ tr:nth-child(odd) td {
 /* Hover effect for table rows */
 tr:hover td {
     background-color: #f6f1a3; /* Light blue background on hover */
+}
+ 
+.img-left{
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+}
+
+.img-right{
+    float: right;
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+}
+.img-left-right{
+    float: left;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+   
+    padding: 10px;
+}
+
+.img-left-right1{
+    float: right;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+   
+    padding: 10px;
 }
 
 /* Responsive table for smaller screens */
