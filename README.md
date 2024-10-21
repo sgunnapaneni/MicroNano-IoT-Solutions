@@ -9,6 +9,11 @@ Deliverable 2:
 2. including relevant papers and sources - done
 
 Final delivery:
+done: venkat
+1.added all images 
+2.designed graohs and added in website
+3.created css styling for website in appealing way
+4. added flipping of the team member so that info looks good
 
 have to do:
 1. add work contribution
