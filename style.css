@@ -248,7 +248,7 @@ main h3 {
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 350px;
+    height: 450px;
     perspective: 1000px; /* Perspective to make 3D flip look good */
     margin: 0 auto; /* Centering the card */
 }
